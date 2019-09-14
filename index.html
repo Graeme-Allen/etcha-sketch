@@ -16,16 +16,22 @@
                 </div>
                 <div id="inks">
                     <button id="hidden" class="ink active-ink" style="display: none;"></button>
-                    <button id="black" class="ink" style="background-color: rgb(0, 0, 0);" onclick="chooseInk('rgb(0, 0, 0)')"></button>
-                    <button id="blue" class="ink" style="background-color: rgb(83, 51, 237);" onclick="chooseInk('rgb(83, 51, 237)')"></button>
-                    <button id="yellow" class="ink" style="background-color: rgb(238, 238, 0);" onclick="chooseInk('rgb(238, 238, 0)')"></button>
-                    <button id="red" class="ink" style="background-color: rgb(207, 0, 15);" onclick="chooseInk('rgb(207, 0, 15)')"></button>
-                    <button id="green" class="ink" style="background-color: rgb(0, 177, 106);" onclick="chooseInk('rgb(0, 177, 106)')"></button>
-                    <button id="orange" class="ink" style="background-color: rgb(255,128,0);" onclick="chooseInk('rgb(255,128,0)')"></button>
-                    <button id="purple" class="ink" style="background-color: rgb(153,0,153);" onclick="chooseInk('rgb(153,0,153)')"></button>
-                    <button id="pink" class="ink" style="background-color: rgb(255,179,191);" onclick="chooseInk('rgb(255,179,191)')"></button>
-                    <button id="teal" class="ink" style="background-color: rgb(0,128,128);" onclick="chooseInk('rgb(0,128,128)')"></button>
-                </div>
+                    <div class="ink-row">
+                        <button id="black" class="ink" style="background-color: rgb(0, 0, 0);" onclick="chooseInk('rgb(0, 0, 0)')"></button>
+                        <button id="blue" class="ink" style="background-color: rgb(83, 51, 237);" onclick="chooseInk('rgb(83, 51, 237)')"></button>
+                        <button id="yellow" class="ink" style="background-color: rgb(238, 238, 0);" onclick="chooseInk('rgb(238, 238, 0)')"></button>
+                    </div>
+                    <div class="ink-row">
+                        <button id="red" class="ink" style="background-color: rgb(207, 0, 15);" onclick="chooseInk('rgb(207, 0, 15)')"></button>
+                        <button id="green" class="ink" style="background-color: rgb(0, 177, 106);" onclick="chooseInk('rgb(0, 177, 106)')"></button>
+                        <button id="orange" class="ink" style="background-color: rgb(255,128,0);" onclick="chooseInk('rgb(255,128,0)')"></button>
+                    </div>
+                    <div class="ink-row">
+                        <button id="purple" class="ink" style="background-color: rgb(153,0,153);" onclick="chooseInk('rgb(153,0,153)')"></button>
+                        <button id="pink" class="ink" style="background-color: rgb(255,179,191);" onclick="chooseInk('rgb(255,179,191)')"></button>
+                        <button id="teal" class="ink" style="background-color: rgb(0,128,128);" onclick="chooseInk('rgb(0,128,128)')"></button>
+                    </div>
+                 </div>
                 <div id="resets">
                     <button id="reset" class="reset" onclick="reset()">Reset Canvas</button>
                     <button id="resolution" class="reset" onclick="resize()">16 x 16</button>
