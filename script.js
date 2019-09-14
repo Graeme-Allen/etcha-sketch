@@ -1,5 +1,5 @@
 let penMode = "";
-let colour = "";
+let colour = "rgba(225,225,225,0";
 //Choose Pen
 function choosePen(type){
     penMode = type;
