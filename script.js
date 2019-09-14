@@ -53,7 +53,7 @@ function createGrid(x,penType){
             div.style.height = squareWidth;
             div.className = "cell";
             div.style.display = "inline-block";
-            div.style.opacity = 1.0;
+            div.style.opacity = 0;
             document.getElementById(rowNum).appendChild(div);
         }
     }
@@ -103,7 +103,7 @@ function pen(cell){
             break;
         case "erase":
             cell.style.backgroundColor = "rgb(255, 255, 255)";
-            cell.style.opacity =  "1.0";
+            cell.style.opacity =  "0.0";
             break;
     } 
 }
@@ -121,7 +121,7 @@ function reset() {
     let count = cells.length;
     for (let i = 0; i < count; i++) {
         cells[i].style.backgroundColor = "rgb(255, 255, 255)"
-        cells[i].style.opacity =  1.0;
+        cells[i].style.opacity =  0.0;
     }   
 }     
 //Change resolution
